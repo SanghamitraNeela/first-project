@@ -1,0 +1,54 @@
+<html>
+    <head>
+    <title>Customer Registration</title>
+    <h1 align="center">Customer Registration</h1>
+    </head>
+    <form align="center" action="/home/3-cse-c/5g7/success.html" >
+        <label>user Name :</label>
+        <input type="text" autofocus  required maxlength="15" pattern="[A-Za-z]+" />
+        <br/>
+        <br/>
+        <label>Password :</label>
+        <input type="password" required minlength="8" maxlength="12" pattern="[A-Za-z0-9]+"/>
+        <br/>
+        <br/>
+        <label>e-mail :</label>
+        <input type="email" name="email"/>
+        <br/>
+        <br/>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender"/>
+        <label>Male</label>
+        <input type="radio" id="female" name="gender"/>
+        <label>Female</label>
+        <input type="radio" id="other" name="gender"/>
+        <label>others</label>
+        <br/>
+        <br/>
+        <label>Age(inYears):</label>
+        <input type="text" min="12" max="60"/>
+        <br/>
+        <br/>
+        <label>Address:</label>
+        <textarea rows="10" cols="20" maxlength="100" placeholder="write from here!"></textarea>
+        <br/>
+        <br/>
+        <label>Company website :</label>
+        <br/>
+        <label>Choose country :</label>
+        <select name="India" id="ind">
+            <option value="ind">India</option>
+            <option value="jpn">Japan</option>
+            <option value="ger">Germany</option>
+            <option value="usa">USA</option>
+        </select>
+        <br/>
+        <br/>
+        <label>Date of Journey :</label>
+        <input type="date" placeholder="dd/mm/yy" id="doj" name="doj"/>
+        <br/>
+        <br/>
+        <input type="submit"  value="Submit"/>
+        <input type="reset" value="Reset"/>
+    </form>
+</html>
